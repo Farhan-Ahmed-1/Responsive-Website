@@ -1,0 +1,224 @@
+/* css reser */
+*{
+    margin:0%;
+    padding: 0%;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* css variables  */
+:root{
+    --navbar-height:59px;
+}
+/* navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+/* nivagation bar logo and image */
+#logo{
+margin: 3px 11px ;
+
+}
+#logo img{
+height: 48px;
+margin: 28px 16px ;
+} 
+
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content: "'";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width:  100%;
+    z-index: -1;
+    opacity:0.6;
+}
+#navbar ul list {
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul list a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px ;
+    text-decoration: none;
+}
+#navbar ul list a:hover{
+    color: rgb(26, 25, 24);
+    background-color: rgb(208, 238, 217);
+    /* opacity: 0.1; */
+}
+/* .items_r{
+    font-family: cursive;
+    
+} */
+
+/* home section  */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 660px ;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "'";
+    background-color: #09192f ;
+    position: absolute;
+    height: 773px;
+    top: 0px;
+    left: 0px;
+    width:  100%;
+    z-index: -1;
+    opacity:0.89 ;
+}
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+#home p{
+    color: aliceblue;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+}
+/* servicess sector */
+#services{
+    margin: 30px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid brown;
+    background: #dad4df;
+    border-radius: 50px;
+    margin: 3px 6px;
+    padding: 34px;
+}
+#services .box img{
+    height: 200px;
+    margin:auto ;
+    display: block;
+}
+#services .box p{
+    font-family: 'Roboto', sans-serif;
+}
+/* #services{}
+#services{}
+#services{} */
+
+/* client section */
+#client-section{
+    position: relative;
+    /* height: 300px; */
+ }
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background:url(../bg.jpg);
+    z-index: -1;
+    opacity: 0.4;
+
+ }
+#clients {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .client-items{
+    padding: 40px;
+ }
+#clients img {
+   height: 150px;
+ }
+
+ /* contact section */
+ #contact{
+    position: relative;
+ }
+ #contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    background: url(../contact.jpg) no-repeat center center/cover;
+
+ }
+ #contact-box{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+ }
+
+ #contact-box input,
+ #contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.2rem;
+ }
+
+ #contact-box form{
+    width: 40%;
+    
+ }
+ #contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Roboto', sans-serif;
+    
+
+ }
+
+ footer{
+    background: black;
+    color: white;
+    padding: 12px;
+
+ }
+
+.h-primary{
+    font-size: 2.8rem;
+    padding: 2px;
+    font-family: 'Roboto', sans-serif;
+
+}
+.h-secondary{
+    font-size: 2.8rem;
+    padding: 12px;
+    font-family: 'Roboto', sans-serif;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color :white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
+
+
+
